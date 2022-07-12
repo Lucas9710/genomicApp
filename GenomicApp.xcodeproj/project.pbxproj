@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162A287CFAD100FDC93E /* AppDelegate.swift */; };
+		A0E7162D287CFAD100FDC93E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */; };
+		A0E7162F287CFAD100FDC93E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162E287CFAD100FDC93E /* ViewController.swift */; };
+		A0E71632287CFAD100FDC93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E71630287CFAD100FDC93E /* Main.storyboard */; };
+		A0E71634287CFAD200FDC93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E71633287CFAD200FDC93E /* Assets.xcassets */; };
+		A0E71637287CFAD200FDC93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E71635287CFAD200FDC93E /* LaunchScreen.storyboard */; };
+		A0E71642287CFAD300FDC93E /* GenomicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E71641287CFAD200FDC93E /* GenomicAppTests.swift */; };
+		A0E7164C287CFAD300FDC93E /* GenomicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7164B287CFAD300FDC93E /* GenomicAppUITests.swift */; };
+		A0E7164E287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0E7163E287CFAD200FDC93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E7161F287CFAD000FDC93E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E71626287CFAD100FDC93E;
+			remoteInfo = GenomicApp;
+		};
+		A0E71648287CFAD300FDC93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0E7161F287CFAD000FDC93E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E71626287CFAD100FDC93E;
+			remoteInfo = GenomicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0E71627287CFAD100FDC93E /* GenomicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenomicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E7162A287CFAD100FDC93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0E7162E287CFAD100FDC93E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0E71631287CFAD100FDC93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0E71633287CFAD200FDC93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0E71636287CFAD200FDC93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0E71638287CFAD200FDC93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E7163D287CFAD200FDC93E /* GenomicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenomicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E71641287CFAD200FDC93E /* GenomicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicAppTests.swift; sourceTree = "<group>"; };
+		A0E71647287CFAD300FDC93E /* GenomicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenomicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0E7164B287CFAD300FDC93E /* GenomicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicAppUITests.swift; sourceTree = "<group>"; };
+		A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0E71624287CFAD100FDC93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E7163A287CFAD200FDC93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E71644287CFAD300FDC93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0E7161E287CFAD000FDC93E = {
+			isa = PBXGroup;
+			children = (
+				A0E71629287CFAD100FDC93E /* GenomicApp */,
+				A0E71640287CFAD200FDC93E /* GenomicAppTests */,
+				A0E7164A287CFAD300FDC93E /* GenomicAppUITests */,
+				A0E71628287CFAD100FDC93E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0E71628287CFAD100FDC93E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0E71627287CFAD100FDC93E /* GenomicApp.app */,
+				A0E7163D287CFAD200FDC93E /* GenomicAppTests.xctest */,
+				A0E71647287CFAD300FDC93E /* GenomicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0E71629287CFAD100FDC93E /* GenomicApp */ = {
+			isa = PBXGroup;
+			children = (
+				A0E7162A287CFAD100FDC93E /* AppDelegate.swift */,
+				A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */,
+				A0E7162E287CFAD100FDC93E /* ViewController.swift */,
+				A0E71630287CFAD100FDC93E /* Main.storyboard */,
+				A0E71633287CFAD200FDC93E /* Assets.xcassets */,
+				A0E71635287CFAD200FDC93E /* LaunchScreen.storyboard */,
+				A0E71638287CFAD200FDC93E /* Info.plist */,
+			);
+			path = GenomicApp;
+			sourceTree = "<group>";
+		};
+		A0E71640287CFAD200FDC93E /* GenomicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0E71641287CFAD200FDC93E /* GenomicAppTests.swift */,
+			);
+			path = GenomicAppTests;
+			sourceTree = "<group>";
+		};
+		A0E7164A287CFAD300FDC93E /* GenomicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0E7164B287CFAD300FDC93E /* GenomicAppUITests.swift */,
+				A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */,
+			);
+			path = GenomicAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0E71626287CFAD100FDC93E /* GenomicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E71651287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicApp" */;
+			buildPhases = (
+				A0E71623287CFAD100FDC93E /* Sources */,
+				A0E71624287CFAD100FDC93E /* Frameworks */,
+				A0E71625287CFAD100FDC93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenomicApp;
+			productName = GenomicApp;
+			productReference = A0E71627287CFAD100FDC93E /* GenomicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0E7163C287CFAD200FDC93E /* GenomicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E71654287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicAppTests" */;
+			buildPhases = (
+				A0E71639287CFAD200FDC93E /* Sources */,
+				A0E7163A287CFAD200FDC93E /* Frameworks */,
+				A0E7163B287CFAD200FDC93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E7163F287CFAD200FDC93E /* PBXTargetDependency */,
+			);
+			name = GenomicAppTests;
+			productName = GenomicAppTests;
+			productReference = A0E7163D287CFAD200FDC93E /* GenomicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0E71646287CFAD300FDC93E /* GenomicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E71657287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicAppUITests" */;
+			buildPhases = (
+				A0E71643287CFAD300FDC93E /* Sources */,
+				A0E71644287CFAD300FDC93E /* Frameworks */,
+				A0E71645287CFAD300FDC93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0E71649287CFAD300FDC93E /* PBXTargetDependency */,
+			);
+			name = GenomicAppUITests;
+			productName = GenomicAppUITests;
+			productReference = A0E71647287CFAD300FDC93E /* GenomicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0E7161F287CFAD000FDC93E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A0E71626287CFAD100FDC93E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A0E7163C287CFAD200FDC93E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A0E71626287CFAD100FDC93E;
+					};
+					A0E71646287CFAD300FDC93E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = A0E71626287CFAD100FDC93E;
+					};
+				};
+			};
+			buildConfigurationList = A0E71622287CFAD000FDC93E /* Build configuration list for PBXProject "GenomicApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0E7161E287CFAD000FDC93E;
+			productRefGroup = A0E71628287CFAD100FDC93E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0E71626287CFAD100FDC93E /* GenomicApp */,
+				A0E7163C287CFAD200FDC93E /* GenomicAppTests */,
+				A0E71646287CFAD300FDC93E /* GenomicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0E71625287CFAD100FDC93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E71637287CFAD200FDC93E /* LaunchScreen.storyboard in Resources */,
+				A0E71634287CFAD200FDC93E /* Assets.xcassets in Resources */,
+				A0E71632287CFAD100FDC93E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E7163B287CFAD200FDC93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E71645287CFAD300FDC93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0E71623287CFAD100FDC93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E7162F287CFAD100FDC93E /* ViewController.swift in Sources */,
+				A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */,
+				A0E7162D287CFAD100FDC93E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E71639287CFAD200FDC93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E71642287CFAD300FDC93E /* GenomicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E71643287CFAD300FDC93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E7164C287CFAD300FDC93E /* GenomicAppUITests.swift in Sources */,
+				A0E7164E287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0E7163F287CFAD200FDC93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E71626287CFAD100FDC93E /* GenomicApp */;
+			targetProxy = A0E7163E287CFAD200FDC93E /* PBXContainerItemProxy */;
+		};
+		A0E71649287CFAD300FDC93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E71626287CFAD100FDC93E /* GenomicApp */;
+			targetProxy = A0E71648287CFAD300FDC93E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0E71630287CFAD100FDC93E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0E71631287CFAD100FDC93E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0E71635287CFAD200FDC93E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0E71636287CFAD200FDC93E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0E7164F287CFAD300FDC93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0E71650287CFAD300FDC93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0E71652287CFAD300FDC93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenomicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0E71653287CFAD300FDC93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenomicApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0E71655287CFAD300FDC93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenomicApp.app/GenomicApp";
+			};
+			name = Debug;
+		};
+		A0E71656287CFAD300FDC93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenomicApp.app/GenomicApp";
+			};
+			name = Release;
+		};
+		A0E71658287CFAD300FDC93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenomicApp;
+			};
+			name = Debug;
+		};
+		A0E71659287CFAD300FDC93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = LosNinosCompus.GenomicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenomicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0E71622287CFAD000FDC93E /* Build configuration list for PBXProject "GenomicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E7164F287CFAD300FDC93E /* Debug */,
+				A0E71650287CFAD300FDC93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E71651287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E71652287CFAD300FDC93E /* Debug */,
+				A0E71653287CFAD300FDC93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E71654287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E71655287CFAD300FDC93E /* Debug */,
+				A0E71656287CFAD300FDC93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E71657287CFAD300FDC93E /* Build configuration list for PBXNativeTarget "GenomicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E71658287CFAD300FDC93E /* Debug */,
+				A0E71659287CFAD300FDC93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0E7161F287CFAD000FDC93E /* Project object */;
+}
