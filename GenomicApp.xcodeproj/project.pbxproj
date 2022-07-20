@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A012DA25288239E00016369D /* MafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012DA24288239E00016369D /* MafView.swift */; };
+		A012DA2728825F990016369D /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012DA2628825F990016369D /* Sequence.swift */; };
+		A012DA29288260BD0016369D /* SequenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012DA28288260BD0016369D /* SequenceView.swift */; };
+		A0B107A7287F3ED700D7DA43 /* WindowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B107A6287F3ED700D7DA43 /* WindowsViewModel.swift */; };
+		A0B4217C287F88920008A658 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4217B287F88920008A658 /* UIColor.swift */; };
+		A0B4217E2880575E0008A658 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4217D2880575E0008A658 /* ControlPanelView.swift */; };
 		A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162A287CFAD100FDC93E /* AppDelegate.swift */; };
 		A0E7162D287CFAD100FDC93E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */; };
 		A0E7162F287CFAD100FDC93E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7162E287CFAD100FDC93E /* ViewController.swift */; };
@@ -16,6 +22,13 @@
 		A0E71642287CFAD300FDC93E /* GenomicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E71641287CFAD200FDC93E /* GenomicAppTests.swift */; };
 		A0E7164C287CFAD300FDC93E /* GenomicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7164B287CFAD300FDC93E /* GenomicAppUITests.swift */; };
 		A0E7164E287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */; };
+		A0E7165C287D120C00FDC93E /* Nucleotide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7165B287D120C00FDC93E /* Nucleotide.swift */; };
+		A0E7165E287D158400FDC93E /* NucleotideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7165D287D158400FDC93E /* NucleotideView.swift */; };
+		A0E71660287D29E400FDC93E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E7165F287D29E400FDC93E /* Helpers.swift */; };
+		A0E71662287DCD8300FDC93E /* WindowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E71661287DCD8300FDC93E /* WindowsView.swift */; };
+		A0FA2B9228859E4200ED99E1 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9128859E4200ED99E1 /* ReadView.swift */; };
+		A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */; };
+		A0FA2B9C2885A9C800ED99E1 /* ReadViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A012DA24288239E00016369D /* MafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafView.swift; sourceTree = "<group>"; };
+		A012DA2628825F990016369D /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		A012DA28288260BD0016369D /* SequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceView.swift; sourceTree = "<group>"; };
+		A0B107A6287F3ED700D7DA43 /* WindowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsViewModel.swift; sourceTree = "<group>"; };
+		A0B4217B287F88920008A658 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A0B4217D2880575E0008A658 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		A0E71627287CFAD100FDC93E /* GenomicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenomicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E7162A287CFAD100FDC93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,13 @@
 		A0E71647287CFAD300FDC93E /* GenomicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenomicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E7164B287CFAD300FDC93E /* GenomicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicAppUITests.swift; sourceTree = "<group>"; };
 		A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenomicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0E7165B287D120C00FDC93E /* Nucleotide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nucleotide.swift; sourceTree = "<group>"; };
+		A0E7165D287D158400FDC93E /* NucleotideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NucleotideView.swift; sourceTree = "<group>"; };
+		A0E7165F287D29E400FDC93E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A0E71661287DCD8300FDC93E /* WindowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsView.swift; sourceTree = "<group>"; };
+		A0FA2B9128859E4200ED99E1 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadView+UITableView.swift"; sourceTree = "<group>"; };
+		A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0B4217A287F88820008A658 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0B4217B287F88920008A658 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A0E7161E287CFAD000FDC93E = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +133,12 @@
 		A0E71629287CFAD100FDC93E /* GenomicApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0E7165A287D116400FDC93E /* Models */,
 				A0E7162A287CFAD100FDC93E /* AppDelegate.swift */,
 				A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */,
 				A0E7162E287CFAD100FDC93E /* ViewController.swift */,
+				A0E7165F287D29E400FDC93E /* Helpers.swift */,
+				A0B4217A287F88820008A658 /* Extensions */,
 				A0E71630287CFAD100FDC93E /* Main.storyboard */,
 				A0E71633287CFAD200FDC93E /* Assets.xcassets */,
 				A0E71635287CFAD200FDC93E /* LaunchScreen.storyboard */,
@@ -125,6 +162,24 @@
 				A0E7164D287CFAD300FDC93E /* GenomicAppUITestsLaunchTests.swift */,
 			);
 			path = GenomicAppUITests;
+			sourceTree = "<group>";
+		};
+		A0E7165A287D116400FDC93E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0E7165B287D120C00FDC93E /* Nucleotide.swift */,
+				A0E7165D287D158400FDC93E /* NucleotideView.swift */,
+				A0E71661287DCD8300FDC93E /* WindowsView.swift */,
+				A0B107A6287F3ED700D7DA43 /* WindowsViewModel.swift */,
+				A0B4217D2880575E0008A658 /* ControlPanelView.swift */,
+				A012DA24288239E00016369D /* MafView.swift */,
+				A012DA2628825F990016369D /* Sequence.swift */,
+				A012DA28288260BD0016369D /* SequenceView.swift */,
+				A0FA2B9128859E4200ED99E1 /* ReadView.swift */,
+				A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */,
+				A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +313,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FA2B9C2885A9C800ED99E1 /* ReadViewTableViewCell.swift in Sources */,
 				A0E7162F287CFAD100FDC93E /* ViewController.swift in Sources */,
+				A0E71662287DCD8300FDC93E /* WindowsView.swift in Sources */,
+				A012DA2728825F990016369D /* Sequence.swift in Sources */,
+				A012DA29288260BD0016369D /* SequenceView.swift in Sources */,
+				A0E71660287D29E400FDC93E /* Helpers.swift in Sources */,
+				A0B4217E2880575E0008A658 /* ControlPanelView.swift in Sources */,
+				A012DA25288239E00016369D /* MafView.swift in Sources */,
 				A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */,
+				A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */,
+				A0B4217C287F88920008A658 /* UIColor.swift in Sources */,
+				A0B107A7287F3ED700D7DA43 /* WindowsViewModel.swift in Sources */,
+				A0FA2B9228859E4200ED99E1 /* ReadView.swift in Sources */,
+				A0E7165E287D158400FDC93E /* NucleotideView.swift in Sources */,
 				A0E7162D287CFAD100FDC93E /* SceneDelegate.swift in Sources */,
+				A0E7165C287D120C00FDC93E /* Nucleotide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
