@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     var sequenceView: SequenceView!
     
+    var sequences: [Sequence] = []
+    
     var nucleotideSpace : Double {
         5
     }
@@ -35,12 +37,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let fastaFile = getFastaFile()
+        self.sequences = FastaProcessor.transform(fasta: fastaFile)
         createWindowView()
         createControlPanelView()
         createSequenceView(mySequence: sequence)
-        createReadView()
-        
-       
+        createReadView(sequences: sequences)
+    }
+    
+    func getFastaFile() -> String {
+        let urlPath = Bundle.main.url(forResource: "ch19_gene", withExtension: "fasta")!
+        let data = try! Data(contentsOf: urlPath)
+        let string = String(data: data, encoding: .utf8)!
+        return string
     }
     
     
@@ -115,7 +124,7 @@ class ViewController: UIViewController {
         if isActive {
             //show menu
             self.view.sendSubviewToBack(sequenceView)
-            createReadView()
+            createReadView(sequences: sequences)
             controlPanelView.showReadViewOptions()
             
         } else {
@@ -165,10 +174,10 @@ class ViewController: UIViewController {
         createSequenceView(mySequence : newSequence)
     }
     
-    func createReadView(){
+    func createReadView(sequences: [Sequence]){
         windowsView.isHidden = true
        
-        readView = ReadView(sequenceUpdate: sequenceChanged(sequence:))
+        readView = ReadView(sequences: sequences, sequenceUpdate: sequenceChanged(sequence:))
         
         view.addSubview(readView)
         

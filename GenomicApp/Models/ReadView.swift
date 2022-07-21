@@ -4,11 +4,11 @@ import UIKit
 class ReadView: UIView {
     
     var tableView : UITableView!
-    var sequences : [Sequence] = [.sample1, .sample2, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6, .sample3, .sample4, .sample5, .sample6]
+    var sequences : [Sequence]
     var sequenceUpdate : SequenceUpdate
     
-    internal init(sequenceUpdate : @escaping SequenceUpdate){
-     
+    internal init(sequences : [Sequence], sequenceUpdate : @escaping SequenceUpdate){
+        self.sequences = sequences
         self.sequenceUpdate = sequenceUpdate
         super.init(frame: .zero)
         self.backgroundColor = .systemBrown

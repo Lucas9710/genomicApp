@@ -30,6 +30,8 @@
 		A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */; };
 		A0FA2B9C2885A9C800ED99E1 /* ReadViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */; };
 		A0FA2B9E2888829D00ED99E1 /* ControlOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9D2888829D00ED99E1 /* ControlOptionView.swift */; };
+		A0FA2BA02889F73C00ED99E1 /* ch19_gene.fasta in Resources */ = {isa = PBXBuildFile; fileRef = A0FA2B9F2889F73C00ED99E1 /* ch19_gene.fasta */; };
+		A0FA2BA22889F90300ED99E1 /* FastaProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2BA12889F90300ED99E1 /* FastaProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadView+UITableView.swift"; sourceTree = "<group>"; };
 		A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewTableViewCell.swift; sourceTree = "<group>"; };
 		A0FA2B9D2888829D00ED99E1 /* ControlOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlOptionView.swift; sourceTree = "<group>"; };
+		A0FA2B9F2889F73C00ED99E1 /* ch19_gene.fasta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ch19_gene.fasta; sourceTree = "<group>"; };
+		A0FA2BA12889F90300ED99E1 /* FastaProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastaProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +139,12 @@
 		A0E71629287CFAD100FDC93E /* GenomicApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0FA2B9F2889F73C00ED99E1 /* ch19_gene.fasta */,
 				A0E7165A287D116400FDC93E /* Models */,
 				A0E7162A287CFAD100FDC93E /* AppDelegate.swift */,
 				A0E7162C287CFAD100FDC93E /* SceneDelegate.swift */,
 				A0E7162E287CFAD100FDC93E /* ViewController.swift */,
+				A0FA2BA12889F90300ED99E1 /* FastaProcessor.swift */,
 				A0E7165F287D29E400FDC93E /* Helpers.swift */,
 				A0B4217A287F88820008A658 /* Extensions */,
 				A0E71630287CFAD100FDC93E /* Main.storyboard */,
@@ -292,6 +298,7 @@
 				A0E71637287CFAD200FDC93E /* LaunchScreen.storyboard in Resources */,
 				A0E71634287CFAD200FDC93E /* Assets.xcassets in Resources */,
 				A0E71632287CFAD100FDC93E /* Main.storyboard in Resources */,
+				A0FA2BA02889F73C00ED99E1 /* ch19_gene.fasta in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 				A0E71660287D29E400FDC93E /* Helpers.swift in Sources */,
 				A0B4217E2880575E0008A658 /* ControlPanelView.swift in Sources */,
 				A012DA25288239E00016369D /* MafView.swift in Sources */,
+				A0FA2BA22889F90300ED99E1 /* FastaProcessor.swift in Sources */,
 				A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */,
 				A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */,
 				A0FA2B9E2888829D00ED99E1 /* ControlOptionView.swift in Sources */,
