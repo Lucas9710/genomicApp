@@ -29,6 +29,7 @@
 		A0FA2B9228859E4200ED99E1 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9128859E4200ED99E1 /* ReadView.swift */; };
 		A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */; };
 		A0FA2B9C2885A9C800ED99E1 /* ReadViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */; };
+		A0FA2B9E2888829D00ED99E1 /* ControlOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA2B9D2888829D00ED99E1 /* ControlOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A0FA2B9128859E4200ED99E1 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 		A0FA2B992885A53100ED99E1 /* ReadView+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadView+UITableView.swift"; sourceTree = "<group>"; };
 		A0FA2B9B2885A9C800ED99E1 /* ReadViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewTableViewCell.swift; sourceTree = "<group>"; };
+		A0FA2B9D2888829D00ED99E1 /* ControlOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				A0E71661287DCD8300FDC93E /* WindowsView.swift */,
 				A0B107A6287F3ED700D7DA43 /* WindowsViewModel.swift */,
 				A0B4217D2880575E0008A658 /* ControlPanelView.swift */,
+				A0FA2B9D2888829D00ED99E1 /* ControlOptionView.swift */,
 				A012DA24288239E00016369D /* MafView.swift */,
 				A012DA2628825F990016369D /* Sequence.swift */,
 				A012DA28288260BD0016369D /* SequenceView.swift */,
@@ -323,6 +326,7 @@
 				A012DA25288239E00016369D /* MafView.swift in Sources */,
 				A0E7162B287CFAD100FDC93E /* AppDelegate.swift in Sources */,
 				A0FA2B9A2885A53100ED99E1 /* ReadView+UITableView.swift in Sources */,
+				A0FA2B9E2888829D00ED99E1 /* ControlOptionView.swift in Sources */,
 				A0B4217C287F88920008A658 /* UIColor.swift in Sources */,
 				A0B107A7287F3ED700D7DA43 /* WindowsViewModel.swift in Sources */,
 				A0FA2B9228859E4200ED99E1 /* ReadView.swift in Sources */,

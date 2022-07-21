@@ -5,7 +5,7 @@ import UIKit
 
 struct Nucleotide{
     var type : NucleotideType
-
+    
     static let a : Nucleotide = .init(type: .a)
     static let t : Nucleotide = .init(type: .t)
     static let g : Nucleotide = .init(type: .g)

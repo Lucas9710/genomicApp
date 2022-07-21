@@ -2,52 +2,93 @@ import UIKit
 
 class ReadViewTableViewCell: UITableViewCell {
     
-   var label = UILabel()
+    var nameLabel = UILabel()
+    var sequenceLabel = UILabel()
+    var countLabel = UILabel()
+    var stackView = UIStackView()
+    var model: Sequence?
+    var percentageFCLabel = UILabel()
+
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.addLabel()
+        self.createStackView()
+        self.addNameLabel()
+        self.addSequenceLabel()
+        self.addCountLabel()
+        self.addPercentegeFC()
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func addLabel() {
-        self.addSubview(label)
-        label.font = .boldSystemFont(ofSize: 16)
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        label.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+    func addNameLabel() {
+        stackView.addArrangedSubview(nameLabel)
+        nameLabel.font = .boldSystemFont(ofSize: 24)
+        nameLabel.textColor = .black
     }
     
+    func addSequenceLabel() {
+        let subtitleLabel = UILabel()
+        subtitleLabel.text = "Sequence:"
+        subtitleLabel.font = .boldSystemFont(ofSize: 16)
+        subtitleLabel.textColor = .red
+        stackView.addArrangedSubview(subtitleLabel)
+        
+        sequenceLabel.font = .systemFont(ofSize: 16)
+        sequenceLabel.textColor = .red
+        stackView.addArrangedSubview(sequenceLabel)
+    }
     
-    func updateLabel(text : String) {
-        label.text = text
+    func addCountLabel() {
+        let subtitleLabel = UILabel()
+        subtitleLabel.text = "Count:"
+        subtitleLabel.font = .boldSystemFont(ofSize: 16)
+        subtitleLabel.textColor = .blue
+        stackView.addArrangedSubview(subtitleLabel)
+        
+        countLabel.font = .systemFont(ofSize: 16)
+        countLabel.textColor = .blue
+        stackView.addArrangedSubview(countLabel)
+    }
+    
+    func addPercentegeFC(){
+        
+        let subtitleLabel = UILabel()
+        subtitleLabel.text = "Percentege:"
+        subtitleLabel.font = .boldSystemFont(ofSize: 16)
+        subtitleLabel.textColor = .blue
+        stackView.addArrangedSubview(subtitleLabel)
+        
+        percentageFCLabel.font = .systemFont(ofSize: 16)
+        percentageFCLabel.textColor = .blue
+        stackView.addArrangedSubview(percentageFCLabel)
+        
+        
+        
+    }
+    
+    func updateModel(model : Sequence) {
+        self.model = model
+        nameLabel.text = "Secuencia de \(model.count) nucleotidos"
+        sequenceLabel.text = model.text
+        countLabel.text = "\(model.count) nucleotides"
+        
+        percentageFCLabel.text = model.percentageText
     }
 
-    func setUp(row: Int) {
-        for index in 0...row{
-            
-            switch(index){
-            case 0:
-                self.backgroundColor = .blue
-            
-                
-                break
-            case 1:
-                self.backgroundColor = .red
-              
-                break
-            case 2:
-                self.backgroundColor = .orange
-              
-            default:
-                self.backgroundColor = .black
-          
-            
-            }
-        }
+    func createStackView(){
+        
+        self.addSubview(stackView)
+        
+        stackView.axis = .vertical
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        stackView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        stackView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
     }
 }

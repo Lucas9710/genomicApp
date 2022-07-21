@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         5
     }
     
-    
     var nucleotideSize : Double {
         return self.view.bounds.width / Double(windowsView.windowLenght) - nucleotideSpace
     }
@@ -40,6 +39,7 @@ class ViewController: UIViewController {
         createControlPanelView()
         createSequenceView(mySequence: sequence)
         createReadView()
+        
        
     }
     
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     
     func createControlPanelView(){
         //instancia un objeto de la clase contronPanelView y le pasa por parametros si el boton de cambiar la animacion y el boton de cambiar el fondo
-        controlPanelView = ControlPanelView(animationStateChanged: self.animationChanged(isActive:), fondStateChanged: self.fondChanged(isActive:), viewBackState: viewBackState(isActive:))
+        controlPanelView = ControlPanelView(animationStateChanged: self.animationChanged(isActive:), fondStateChanged: self.fondChanged(isActive:), viewBackState: viewBackState(isActive:), backToSequenceState: backToSequence(isActive:))
         //agrega la vista a la pantalla
         view.addSubview(controlPanelView)
         //Un valor booleano que determina si la máscara de tamaño automático de la vista se traduce en restricciones de diseño automático.
@@ -92,6 +92,7 @@ class ViewController: UIViewController {
         
         controlPanelView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         controlPanelView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        controlPanelView.showReadViewOptions()
     }
     
     func animationChanged(isActive : Bool){
@@ -102,17 +103,38 @@ class ViewController: UIViewController {
         self.view.backgroundColor = isActive ? .black :  .white
     }
     
+    func backToSequence(isActive: Bool){
+        readView.removeFromSuperview()
+        controlPanelView.showNucleotideViewOptions()
+        windowsView.isHidden = false
+    }
+    
     func viewBackState(isActive: Bool){
         view.bringSubviewToFront(readView)
-        sequenceView.isHidden = isActive
-        isActive ? createReadView() : readView.removeFromSuperview()
+        
+        if isActive {
+            //show menu
+            self.view.sendSubviewToBack(sequenceView)
+            createReadView()
+            controlPanelView.showReadViewOptions()
+            
+        } else {
+            //show nucleotide view
+            readView.removeFromSuperview()
+            controlPanelView.showNucleotideViewOptions()
+        }
+    
+    }
+    
+    func changedView(isActive: Bool){
+        view.bringSubviewToFront(controlPanelView)
     }
     
     func sequenceChanged(sequence : Sequence){
         self.updateSequence(newSequence: sequence)
-        self.controlPanelView.turnOffViewBack()
+        controlPanelView.showNucleotideViewOptions()
     }
-
+    
 
     func createSequenceView(mySequence : Sequence){
        
@@ -144,7 +166,8 @@ class ViewController: UIViewController {
     }
     
     func createReadView(){
-        
+        windowsView.isHidden = true
+       
         readView = ReadView(sequenceUpdate: sequenceChanged(sequence:))
         
         view.addSubview(readView)
@@ -157,6 +180,8 @@ class ViewController: UIViewController {
 
         readView.topAnchor.constraint(equalTo: controlPanelView.bottomAnchor).isActive = true
         readView.bottomAnchor.constraint(equalTo: windowsView.topAnchor, constant: -28).isActive = true
+        
+        
     }
     
     

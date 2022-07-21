@@ -10,8 +10,7 @@ extension ReadView: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReadViewTableViewCell
         let index = indexPath.row
         let sequence = sequences[index]
-        cell.updateLabel(text: sequence.text)
-        cell.setUp(row: index)
+        cell.updateModel(model: sequence)
         return cell
     }
 }
