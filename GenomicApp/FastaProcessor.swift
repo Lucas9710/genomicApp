@@ -1,4 +1,3 @@
-//
 //  FastaProcessor.swift
 //  GenomicApp
 //
