@@ -11,6 +11,8 @@ struct Nucleotide{
     static let g : Nucleotide = .init(type: .g)
     static let c : Nucleotide = .init(type: .c)
     
+    var quality: Double = 1.0
+    
     var letter: String {
         switch self.type {
         case .a:

@@ -1,23 +1,27 @@
 import Darwin
 struct Sequence {
     
-    internal init(nucleotideString: String) {
+    internal init(nucleotideString: String, qualityString: String? = nil) {
         var tempNucleotides : [Nucleotide] = []
         
         for index in 0...nucleotideString.count - 1{
             let letter = nucleotideString[index..<index+1]
+            let qualityLetter = String(qualityString![index..<index+1])
+            var nucleotide: Nucleotide = .a
             switch letter {
             case "A":
-                tempNucleotides.append(.a)
+                nucleotide = .a
             case "T":
-                tempNucleotides.append(.t)
+                nucleotide = .t
             case "C":
-                tempNucleotides.append(.c)
+                nucleotide = .c
             case "G":
-                tempNucleotides.append(.g)
+                nucleotide = .g
             default:
                 break
             }
+            nucleotide.quality = FastaProcessor.getPercentageQuality(character: qualityLetter)
+            tempNucleotides.append(nucleotide)
         }
         
         self.nucleotides = tempNucleotides

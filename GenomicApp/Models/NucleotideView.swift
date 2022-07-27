@@ -13,6 +13,7 @@ class NucleotideView : UIView{
     var gradientLayer = CAGradientLayer()
     var isAnimating: Bool = false
     var mafView : MafView!
+    var qualitySequenceView : QualitySequenceView!
     
     internal init(nucleotide: Nucleotide) {
         self.nucleotide = nucleotide
@@ -22,17 +23,18 @@ class NucleotideView : UIView{
         addBlackViews()
         addGesture()
         createMafview()
-    
+        createQualitySequeceView()
     }
     
-    func update(nucleotide : Nucleotide){
+    func update(nucleotide: Nucleotide){
         self.nucleotide = nucleotide
         self.label.text = nucleotide.letter
         self.label.backgroundColor = nucleotide.color
-        
 
         self.complementaryLabel.text = nucleotide.complement.letter
         self.complementaryLabel.backgroundColor = nucleotide.complement.color.darker()
+        
+        self.qualitySequenceView.update(quality: nucleotide.quality)
     }
     
     func startAnimation(delay: Double = 0) {
@@ -242,7 +244,7 @@ class NucleotideView : UIView{
     func createMafview(){
        mafView = MafView()
         
-        
+      
         addSubview(mafView)
         mafView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -257,6 +259,20 @@ class NucleotideView : UIView{
         
         
     }
+    
+    func createQualitySequeceView(){
+        qualitySequenceView = QualitySequenceView(quality: nucleotide.quality)
+       
+         addSubview(qualitySequenceView)
+         qualitySequenceView.translatesAutoresizingMaskIntoConstraints = false
+         
+         qualitySequenceView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+         qualitySequenceView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+         
+         qualitySequenceView.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
+        qualitySequenceView.topAnchor.constraint(equalTo: self.topAnchor, constant: -120).isActive = true
+    }
+    
     
 //
 //    @objc func showComplement(){

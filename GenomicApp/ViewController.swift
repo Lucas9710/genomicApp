@@ -37,12 +37,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let fastaFile = getFastaFile()
-        self.sequences = FastaProcessor.transform(fasta: fastaFile)
+       //let fastaFile = getFastaFile()
+       let fastqFile = getFastqFile()
+        //sequences = FastaProcessor.transformFasta(fasta: fastqFile)
+        sequences = FastaProcessor.transformFastq(fastq: fastqFile)
         createWindowView()
         createControlPanelView()
         createSequenceView(mySequence: sequence)
         createReadView(sequences: sequences)
+      
     }
     
     func getFastaFile() -> String {
@@ -52,6 +55,12 @@ class ViewController: UIViewController {
         return string
     }
     
+    func getFastqFile() -> String{
+        let urlPath = Bundle.main.url(forResource: "archivo", withExtension: "fastq")!
+        let data = try! Data(contentsOf: urlPath)
+        let string = String(data: data, encoding: .utf8)!
+        return string
+    }
     
     func createWindowView() {
         //instancia un objeto de la clase WindowsView

@@ -20,14 +20,48 @@ class GenomicAppTests: XCTestCase {
 
     func testSequence1() throws {
         let sequenceText = Sequence.sample1.text
-        let compareText = "atgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcat"
+        let compareText = "atgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcatgaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggaactgctattgcctggatgcatgcatgcatgcatgcatgcatgcatgcatgcatgcat".uppercased()
         XCTAssertEqual(sequenceText, compareText)
     }
     
-    func testSequence2() throws {
-        let sequenceText = Sequence.sample2.text
-        let compareText = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagggggggggggggggggggggggtttttttttttttttttttttttttccccccccccccccccccc"
-        XCTAssertEqual(sequenceText, compareText)
+    func testQuality0() {
+        let caracter = "!"
+        let number = FastaProcessor.getQuality(character: caracter)
+        XCTAssertEqual(0, number)
+    }
+    
+    func testQuality1() {
+        let caracter = "+"
+        let number = FastaProcessor.getQuality(character: caracter)
+        XCTAssertEqual(10, number)
+    }
+    
+    func testQuality2() {
+        let caracter = "#"
+        let number = FastaProcessor.getQuality(character: caracter)
+        XCTAssertEqual(2, number)
+    }
+    
+    func testQuality3() {
+        let caracter = "3"
+        let number = FastaProcessor.getQuality(character: caracter)
+        XCTAssertEqual(18, number)
+    }
+    
+    func testValidateSequence() throws{
+        
+        let sequenceNucleotide = Sequence.sample1.text
+        var isValid = FastaProcessor.validateNucleotideSequence(sequence: sequenceNucleotide)
+        XCTAssertTrue(isValid, "This was a valid sequence \(sequenceNucleotide) but was rejected")
+        
+    }
+    
+    func testInvalidSequence() throws{
+        
+        let sequenceNucleotide = "LUCAS¿56456"
+        var isValid = FastaProcessor.validateNucleotideSequence(sequence: sequenceNucleotide)
+        XCTAssertFalse(isValid, "This was an invalid sequence \(sequenceNucleotide) but was accepted")
+        
     }
 
     func testPerformanceExample() throws {
