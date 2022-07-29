@@ -32,7 +32,7 @@ struct Sequence {
     }
     
     var nucleotides : [Nucleotide]
-    //var percentege = GCpercentage()
+   
     var count: Int { nucleotides.count }
     var text: String {
         var string : String = ""
@@ -67,7 +67,7 @@ struct Sequence {
         
         for index in 0...nucleotides.count - 1{
            
-            var type = nucleotides[index].type
+            let type = nucleotides[index].type
             switch type {
             case .c :
                 letterGandC += 1

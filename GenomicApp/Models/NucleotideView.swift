@@ -14,6 +14,11 @@ class NucleotideView : UIView{
     var isAnimating: Bool = false
     var mafView : MafView!
     var qualitySequenceView : QualitySequenceView!
+    var isShowingQuality: Bool = false {
+        didSet {
+            qualitySequenceView.isHidden = !isShowingQuality
+        }
+    }
     
     internal init(nucleotide: Nucleotide) {
         self.nucleotide = nucleotide
@@ -266,11 +271,11 @@ class NucleotideView : UIView{
          addSubview(qualitySequenceView)
          qualitySequenceView.translatesAutoresizingMaskIntoConstraints = false
          
-         qualitySequenceView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+        qualitySequenceView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
          qualitySequenceView.heightAnchor.constraint(equalToConstant: 100).isActive = true
          
          qualitySequenceView.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0).isActive = true
-        qualitySequenceView.topAnchor.constraint(equalTo: self.topAnchor, constant: -120).isActive = true
+        qualitySequenceView.topAnchor.constraint(equalTo: self.topAnchor, constant: -150).isActive = true
     }
     
     

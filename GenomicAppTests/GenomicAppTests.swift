@@ -24,11 +24,27 @@ class GenomicAppTests: XCTestCase {
         XCTAssertEqual(sequenceText, compareText)
     }
     
-    func testQuality0() {
-        let caracter = "!"
-        let number = FastaProcessor.getQuality(character: caracter)
-        XCTAssertEqual(0, number)
+    func testQualityColor100() {
+        let r = FastaProcessor.getRed(percentage: 1)
+        let g = FastaProcessor.getGreen(percentage: 1)
+        XCTAssertEqual(r, 0)
+        XCTAssertEqual(g, 1)
     }
+    
+    func testQualityColor0() {
+        let r = FastaProcessor.getRed(percentage: 0)
+        let g = FastaProcessor.getGreen(percentage: 0)
+        XCTAssertEqual(r, 1)
+        XCTAssertEqual(g, 0)
+    }
+    
+    func testQualityColor50() {
+        let r = FastaProcessor.getRed(percentage: 0.5)
+        let g = FastaProcessor.getGreen(percentage: 0.5)
+        XCTAssertEqual(r, 1)
+        XCTAssertEqual(g, 1)
+    }
+    
     
     func testQuality1() {
         let caracter = "+"

@@ -11,8 +11,6 @@ class ViewController: UIViewController {
     
     lazy var sequence: Sequence = .sample1
     
-    //un arreglo con las cajas de nucleotidos
-    var nucleotideViews: [NucleotideView] = []
     
     //la lista de nucleotidos dentro del rango de vista
     var windowNucleotides: [Nucleotide] = []
@@ -99,7 +97,7 @@ class ViewController: UIViewController {
     
     func createControlPanelView(){
         //instancia un objeto de la clase contronPanelView y le pasa por parametros si el boton de cambiar la animacion y el boton de cambiar el fondo
-        controlPanelView = ControlPanelView(animationStateChanged: self.animationChanged(isActive:), fondStateChanged: self.fondChanged(isActive:), viewBackState: viewBackState(isActive:), backToSequenceState: backToSequence(isActive:))
+        controlPanelView = ControlPanelView(animationStateChanged: self.animationChanged(isActive:), fondStateChanged: self.fondChanged(isActive:), viewBackState: viewBackState(isActive:), backToSequenceState: backToSequence(isActive:), hideQuality: hideQualityState(isActive:) )
         //agrega la vista a la pantalla
         view.addSubview(controlPanelView)
         //Un valor booleano que determina si la máscara de tamaño automático de la vista se traduce en restricciones de diseño automático.
@@ -127,6 +125,8 @@ class ViewController: UIViewController {
         windowsView.isHidden = false
     }
     
+    
+    
     func viewBackState(isActive: Bool){
         view.bringSubviewToFront(readView)
         
@@ -143,16 +143,21 @@ class ViewController: UIViewController {
         }
     
     }
+   
     
-    func changedView(isActive: Bool){
-        view.bringSubviewToFront(controlPanelView)
+    func hideQualityState(isActive: Bool){
+        
+        sequenceView.isShowingQuality = !sequenceView.isShowingQuality
     }
+    
+  
     
     func sequenceChanged(sequence : Sequence){
         self.updateSequence(newSequence: sequence)
         controlPanelView.showNucleotideViewOptions()
     }
     
+   
 
     func createSequenceView(mySequence : Sequence){
        
@@ -171,6 +176,8 @@ class ViewController: UIViewController {
         sequenceView.bottomAnchor.constraint(equalTo: windowsView.topAnchor, constant: -28).isActive = true
         
     }
+    
+    
     
     func updateSequence(newSequence : Sequence){
         

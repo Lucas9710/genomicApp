@@ -13,7 +13,6 @@ class SequenceView : UIView{
         getWindowNucleotides(for: self.range)
     }
     
-    
     var nucleotideSpace : Double {
         5
     }
@@ -25,6 +24,14 @@ class SequenceView : UIView{
     }
     let sequence : Sequence
     var range: SequenceRange
+    
+    var isShowingQuality: Bool = false {
+        didSet {
+            nucleotideViews.forEach { nucleotideView in
+                nucleotideView.isShowingQuality = isShowingQuality
+            }
+        }
+    }
     
     internal init(sequence : Sequence, range: SequenceRange){
         self.range = range
@@ -107,6 +114,7 @@ class SequenceView : UIView{
     func animationChanged(isActive : Bool){
         isActive ? startAnimating() : stopAnimating()
     }
+    
     
 }
 

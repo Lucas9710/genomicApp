@@ -22,13 +22,14 @@ class QualitySequenceView : UIView{
     func update(quality: Double) {
         self.quality = quality
         heightConstraint.constant = quality * 100
+        viewQuality.backgroundColor = FastaProcessor.getQualityColor(percentage: quality)
     }
     
     func shadeView (){
         
         let shadeView = UIView()
         
-        shadeView.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
+        shadeView.backgroundColor = UIColor(white: 0.5, alpha: 0.2)
         self.addSubview(shadeView)
         
         shadeView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,7 +47,7 @@ class QualitySequenceView : UIView{
     func createQualitySequeceView(){
         viewQuality = UIView()
         heightConstraint = viewQuality.heightAnchor.constraint(equalToConstant: 100)
-        widthConstraint = viewQuality.widthAnchor.constraint(equalToConstant: 24)
+        widthConstraint = viewQuality.widthAnchor.constraint(equalTo: self.widthAnchor)
         
         addSubview(viewQuality)
         
@@ -54,11 +55,11 @@ class QualitySequenceView : UIView{
         heightConstraint.constant = quality * 100
         heightConstraint.isActive = true
         widthConstraint.isActive = true
-        viewQuality.backgroundColor = .red
         
         viewQuality.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         viewQuality.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
+        viewQuality.backgroundColor = FastaProcessor.getQualityColor(percentage: quality)
         
     }
     

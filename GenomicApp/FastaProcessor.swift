@@ -1,10 +1,5 @@
-//  FastaProcessor.swift
-//  GenomicApp
-//
-//  Created by Lucas on 21/07/2022.
-//
-
 import Foundation
+import UIKit
 
 class FastaProcessor {
     
@@ -60,7 +55,30 @@ class FastaProcessor {
     
     
     static func getPercentageQuality(character: String) -> Double {
-        Double(getQuality(character: character)) / 40.0
+       Double(getQuality(character: character)) / 40.0
+        
+    }
+    
+    static func getQualityColor(percentage: Double) -> UIColor {
+        let r: Double = getRed(percentage: percentage)
+        let g: Double = getGreen(percentage: percentage) * 0.9
+        let b: Double = 0.4
+        return UIColor(red: r, green: g, blue: b, alpha: 1)
+    }
+    
+    
+    static func getRed(percentage: Double) -> Double {
+        var red = 2 - 2 * percentage
+        if red > 1 { red = 1 }
+        if red < 0 { red = 0 }
+        return red
+    }
+    
+    static func getGreen(percentage: Double) -> Double {
+        var green = 2 * percentage
+        if green > 1 { green = 1 }
+        if green < 0 { green = 0 }
+        return green
     }
 
 }

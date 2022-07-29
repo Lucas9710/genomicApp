@@ -1,9 +1,3 @@
-//
-//  Helpers.swift
-//  GenomicApp
-//
-//  Created by Lucas on 12/07/2022.
-//
 
 import Foundation
 import UIKit
